@@ -68,7 +68,7 @@ class About extends Component {
                   />
             <Slogan id={ this.state.slogan3Class } title='Thoughful Design'
                   onClick={this.handleClick}
-                  img='tielogo.png'
+                  img='brushlogo.png'
                   info=""
                   />
             </div>

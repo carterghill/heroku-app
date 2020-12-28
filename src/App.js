@@ -44,18 +44,7 @@ function App() {
             )} />
 
         </div>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
-        <p> hi </p>
+
 
     </Layout>
     </BrowserRouter>
