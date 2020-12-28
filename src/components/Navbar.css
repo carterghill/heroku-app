@@ -1,0 +1,235 @@
+/* Disables side scroll */
+body {
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3acbf7;
+}
+
+.btn {
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #6568f4;
+    transition: 250ms;
+
+    text-decoration: none;
+}
+
+.top-bar {
+    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+}
+
+.top-container {
+    border-radius: 2px;
+    border-style: none;
+    height:100%;
+}
+
+.top-list {
+    position: absolute;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    height: 66px;
+    align-items: center;
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: end;
+    transform: translate(-80px, 0);
+    width:100%;
+    height:44px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#contactButton {
+    margin-left: 1.5rem;
+}
+
+.logo {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    display: inline-block;
+    opacity: 1;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    transform: translate(36px, -15px);
+    transition: all 0.5s ease-out;
+}
+
+.logo-img {
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    top: 30px;
+    left: 132px;
+}
+
+.logo.active {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.menu-icon {
+    opacity: 0;
+    right: 0%;
+    transform: translate(-150%, -200%);
+}
+
+.menu {
+    display:inline-block;
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    height: 100px;
+    align-items: center;
+}
+
+.list {
+    position: absolute;
+    transform: translate(-0%, -300%);
+}
+
+.item {
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.item-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1.25rem;
+    margin-right: 0.25rem;
+
+    font-size: 20px;
+}
+
+.button {
+}
+.item-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 960px) {
+
+    .menu-icon {
+        opacity: 1;
+        position: absolute;
+        right: 0%;
+        transform: translate(-150%, 46%);
+        transition: all 0.5s ease-out;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-top: 64px;
+        padding: 1rem 20%;
+    }
+
+    .btn:hover {
+        margin-left: 0;
+        margin-top: 64px;
+        padding: 1rem 20%;
+    }
+
+    .top-bar.active {
+        width: 30%;
+        transition: all 0.5s ease-out;
+    }
+
+    .top-list {
+        opacity: 1;
+        left: 100%;
+        background-color: black;
+        transform: translate(-2000px, 0);
+    }
+
+    .menu {
+        overflow: hidden;
+        position: absolute;
+        background: linear-gradient(90deg, rgb(0, 70, 100) 0%, rgba(50,50,150,1) 100%);
+        left: 100%;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        transition: all 0.5s ease-out;
+        z-index: 100;
+    }
+
+    .list {
+        position: relative;
+        opacity: 1;
+        font-size: 22px;
+        list-style: none;
+        display:grid;
+        grid-template-columns: repeat(auto, 6);
+        text-align: center;
+        padding-right: 36px;
+
+        transform: translate(-0%, -0%);
+    }
+
+    .item-link {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 1.5rem 25%;
+        margin: 0.25rem;
+        border-radius: 5px;
+    }
+
+    .button {
+        margin-top: 36px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .menu-icon.active {
+        position: absolute;
+        right: 70%;
+        transform: translate(-150%, 50%);
+        border-radius: 5px;
+        transition: all 0.5s ease-out;
+    }
+
+    .menu.active {
+        position: absolute;
+        background-color: purple;
+        left: 30%;
+        top: 0;
+        width: 70%;
+        transition: all 0.5s ease-out;
+    }
+}
