@@ -2,10 +2,13 @@ import Layout from './components/Layout'
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
         <Layout>
-            Hello World!
+        Content BRO
+
+
         </Layout>
     </div>
   );
