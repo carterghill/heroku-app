@@ -1,0 +1,44 @@
+.project {
+	margin: 2rem;
+	display: flex;
+}
+
+.projectInfo {
+	margin: auto auto auto 3.5rem;
+}
+
+.projectImg {
+	margin: 1rem;
+	box-shadow: 1.25rem 1.25rem grey;
+	width: 60%;
+}
+
+.projectHeader {
+	margin: 2rem;
+	color: rgb(50, 50, 50);
+	font-size: 1.75rem;
+}
+
+.projectSum {
+	margin: 2rem;
+	color: rgb(50, 50, 50);
+	font-size: 1.1rem;
+}
+
+@media screen and (max-width: 960px) {
+
+	.project {
+		flex-direction: column;
+	}
+
+	.projectImg {
+		margin: auto;
+		margin-top: 3rem;
+	}
+
+	.projectInfo {
+		margin: 3rem auto auto auto;
+		width: 90%;
+	}
+
+}

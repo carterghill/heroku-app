@@ -9,6 +9,7 @@ import love2d from '../Images/love2d.png'
 import tielogo from '../Images/tielogo.png'
 import unity from '../Images/unity.png'
 import brush from '../Images/brushlogo.png'
+import gameshot from '../Images/gameshot.png'
 
 function importAll(r) {
 
@@ -41,7 +42,8 @@ const images = {
     "love2d.png": love2d,
     "tielogo.png": tielogo,
     "unity.png": unity,
-    "brushlogo.png": brush
+    "brushlogo.png": brush,
+    "gameshot.png": gameshot
 }
 
 export const Image = ({

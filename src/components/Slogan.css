@@ -1,10 +1,10 @@
 .slogan {
 	width: 30%;
-	border-style: dotted;
+	border-style: hidden;
 	border-color: rgb(200, 200, 255);
 	border-radius: 10px;
     color: rgb(75,75,75);
-	margin: 1rem;
+	margin: 0rem;
 	margin-top: 2rem;
 	z-index: 0;
 }
