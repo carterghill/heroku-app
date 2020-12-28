@@ -56,7 +56,7 @@ class About extends Component {
             <div className='header'>Web, Game, and Custom App Developement</div>
 
             <div className='homeSlogans'>
-            <Slogan id={ this.state.slogan3Class } title='Thoughful Design'
+            <Slogan id={ this.state.slogan1Class } title='Thoughful Design'
                 onClick={this.handleClick}
                 img='brushlogo.png'
                 info=""
@@ -66,7 +66,7 @@ class About extends Component {
                 img='codelogo.png'
                 info=""
                 />
-            <Slogan id={ this.state.slogan1Class } title='Tailored For You'
+            <Slogan id={ this.state.slogan3Class } title='Tailored For You'
                 img='tielogo.png'
                 onClick={this.handleClick}
                 info=""
