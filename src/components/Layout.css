@@ -1,4 +1,27 @@
+/* Disables side scroll */
+body {
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 .layout {
+
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
     height: 100vh;
     /* grid container settings */
     display: grid;
