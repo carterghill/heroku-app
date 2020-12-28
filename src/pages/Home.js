@@ -53,7 +53,7 @@ class About extends Component {
         return (
         <div>
 
-            <div className='header'>Web Design and Custom App Developement</div>
+            <div className='header'>Web, Game, and Custom App Developement</div>
 
             <div className='homeSlogans'>
             <Slogan id={ this.state.slogan1Class } title='Tailored For You'
