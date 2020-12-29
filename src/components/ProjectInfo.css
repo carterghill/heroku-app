@@ -6,7 +6,6 @@
 
 .projectInfo {
 	margin: auto auto auto 3rem;
-	flex-direction: column-reverse;
 }
 
 /* Every project section will show image on oppoisite side */
@@ -36,6 +35,9 @@
 
 	.project {
 		flex-direction: column;
+	}
+	.project:nth-of-type(2n) {
+		flex-direction: column
 	}
 
 	.projectImg {
