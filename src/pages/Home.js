@@ -75,7 +75,7 @@ class About extends Component {
                 />
             </div>
 
-            <div className='titleLeft'>
+            <div className='homeTitle'>
                 Some of my work...
             </div>
 
