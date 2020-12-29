@@ -14,6 +14,14 @@
     border-color: rgb(200,200,200);
 }
 
+.titleLeft {
+	font-size: 1.5rem;
+	color: rgb(75,75,75);
+	text-align: left;
+	margin-left: 6rem;
+	margin-top: 1rem;
+}
+
 @keyframes fadein {
 	from {
 		opacity: 0%;

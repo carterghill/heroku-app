@@ -5,6 +5,7 @@
 
 .projectInfo {
 	margin: auto auto auto 3.5rem;
+	flex-direction: column;
 }
 
 .projectImg {

@@ -73,6 +73,10 @@ class About extends Component {
                 />
             </div>
 
+            <div className='titleLeft'>
+                Some of my work...
+            </div>
+
         </div>
         )
     }

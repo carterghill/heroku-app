@@ -15,6 +15,9 @@ return (
 
 			<div className='projectSum'> A "Jump 'N Shoot" game engine
 				and level editor coded in Lua with the Love2D platform </div>
+
+            {this.props.children}
+
 		</div>
 
     </nav>
