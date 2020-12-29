@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import Slogan from '../components/Slogan'
+import ProjectInfo from '../components/ProjectInfo'
+import {Link} from 'react-router-dom'
 import "./Home.css"
 
 class About extends Component {
@@ -76,6 +78,21 @@ class About extends Component {
             <div className='titleLeft'>
                 Some of my work...
             </div>
+
+            <br></br>
+
+            <ProjectInfo className='homeProject' title='Love Hertz (Love2D)'
+                summary="A ''Jump 'N Shoot'' game engine
+    				and level editor coded in Lua with the Love2D platform"
+                img='gameshot.png'
+            >
+                <Link className='btn' to="/Downloads/Love Hertz.zip" target="_blank" download>
+                    Download
+                </Link>
+                <br></br>
+                <br></br>
+                <a className='github' href='https://github.com/carterghill/LoveHertz2.0'>Github</a>
+            </ProjectInfo>
 
         </div>
         )

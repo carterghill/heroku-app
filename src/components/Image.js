@@ -10,6 +10,7 @@ import tielogo from '../Images/tielogo.png'
 import unity from '../Images/unity.png'
 import brush from '../Images/brushlogo.png'
 import gameshot from '../Images/gameshot.png'
+import rocketshot from '../Images/rocketshot.png'
 
 function importAll(r) {
 
@@ -43,7 +44,8 @@ const images = {
     "tielogo.png": tielogo,
     "unity.png": unity,
     "brushlogo.png": brush,
-    "gameshot.png": gameshot
+    "gameshot.png": gameshot,
+    "rocketshot.png": rocketshot
 }
 
 export const Image = ({

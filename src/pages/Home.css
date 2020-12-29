@@ -5,13 +5,9 @@
 	height: 100%;
 }
 
-.homeSections {
-	border-top-style: dashed;
-	border-color: inherit;
-	margin-top: 2rem;
-	padding-top: 0.75rem;
-	width: 100%;
-    border-color: rgb(200,200,200);
+.homeProject {
+	opacity: 0;
+
 }
 
 .titleLeft {

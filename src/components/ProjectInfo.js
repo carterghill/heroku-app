@@ -4,17 +4,20 @@ import './ProjectInfo.css'
 
 class ProjectInfo extends Component {
 
+constructor(props) {
+    super(props);
+}
+
 render () {
 return (
     <nav className='project'>
 
-    	<Image className='projectImg' img='gameshot.png'/>
+    	<Image className='projectImg' img={this.props.img}/>
 
 		<div className='projectInfo'>
-			<div className='projectHeader'> Love Hertz (Love2D) </div>
+			<div className='projectHeader'>{this.props.title}</div>
 
-			<div className='projectSum'> A "Jump 'N Shoot" game engine
-				and level editor coded in Lua with the Love2D platform </div>
+			<div className='projectSum'>{this.props.summary}</div>
 
             {this.props.children}
 

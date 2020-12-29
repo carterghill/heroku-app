@@ -1,11 +1,17 @@
 .project {
 	margin: 2rem;
 	display: flex;
+	flex-direction: row;
 }
 
 .projectInfo {
-	margin: auto auto auto 3.5rem;
-	flex-direction: column;
+	margin: auto auto auto 3rem;
+	flex-direction: column-reverse;
+}
+
+/* Every project section will show image on oppoisite side */
+.project:nth-of-type(2n) {
+	flex-direction: row-reverse;
 }
 
 .projectImg {
