@@ -66,7 +66,7 @@ class ContactForm extends React.Component {
         };
 
         self = this;
-        window.emailjs.send('service_946epj8', 'template_v54mx1r', variables)
+        window.emailjs.send('service_k90yioz', 'template_v54mx1r', variables)
             .then(function(response) {
                console.log('SUCCESS!');
                self.setState({sendError: false});
