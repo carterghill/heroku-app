@@ -75,15 +75,18 @@ class About extends Component {
                 />
             </div>
 
+            <div id='homeAbout'>
+
+            </div>
+
             <div className='homeTitle'>
                 Some of my work...
             </div>
 
-            <br></br>
 
             <ProjectInfo className='homeProject' title='Love Hertz (Love2D)'
                 summary="A ''Jump 'N Shoot'' game engine
-    				and level editor coded in Lua with the Love2D platform"
+    				and level editor coded in Lua with the Love2D platform."
                 img='gameshot.png'
             >
                 <Link className='btn' to="/Downloads/Love Hertz.zip" target="_blank" download>
@@ -92,6 +95,20 @@ class About extends Component {
                 <br></br>
                 <br></br>
                 <a className='github' href='https://github.com/carterghill/LoveHertz2.0'>Github</a>
+            </ProjectInfo>
+
+            <br></br>
+            <br></br>
+
+            <div className='homeTitle'>
+                What programs am I using?
+            </div>
+
+            <ProjectInfo title='Atom' img='atom.png'
+                summary='A fully editable text editor and IDE with all sorts of plugins to
+                help streamline your coding.'>
+                    <br></br>
+                    <a href='https://atom.io' className='btn'> Visit Website</a>
             </ProjectInfo>
 
         </div>

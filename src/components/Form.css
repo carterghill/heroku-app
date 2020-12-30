@@ -1,0 +1,61 @@
+.form {
+    background-color: rgb(230, 230, 255);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: left;
+    color: rgb(75,75,75);
+}
+
+.formHeader {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.formInput {
+    font-size: 1.15rem;
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 5px;
+    color: rgb(75,75,75);
+}
+
+.inputError {
+    font-size: 0px;
+}
+
+.inputError.active{
+    font-size: 12px;
+    color: red;
+}
+
+.sending {
+    font-size: 0px;
+}
+
+.sending.active{
+    font-size: 12px;
+    color: blue;
+}
+
+.sent {
+    font-size: 0px;
+}
+
+.sent.active{
+    font-size: 12px;
+    color: green;
+}
+
+#message {
+    height: 12rem;
+    align-items: baseline;
+}
+
+#submitButton {
+    padding: 0.75rem;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+}
