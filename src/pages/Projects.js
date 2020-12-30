@@ -3,7 +3,7 @@ import ProjectInfo from '../components/ProjectInfo'
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import './Projects.css'
 
-class About extends Component {
+class Projects extends Component {
 render() {
 return (
     <div >
@@ -42,4 +42,4 @@ return (
 }
 }
 
-export default About
+export default Projects
