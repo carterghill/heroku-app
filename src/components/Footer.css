@@ -1,0 +1,14 @@
+
+.footer {
+	padding: 1rem;
+	color: rgb(220, 220, 220);
+}
+
+.footerLink {
+	color: rgb(220, 220, 220);
+	text-decoration: none;
+	margin: 1.5rem;
+}
+.footerLink:hover {
+	text-decoration: underline;
+}
