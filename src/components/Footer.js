@@ -3,10 +3,15 @@ import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import './Footer.css'
 
 class Footer extends Component {
+
+    handleClick = () => {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <div className='footer'>
-				<Link className='footerLink' to='/home'>Home</Link>
+				<Link onClick={this.handleClick} className='footerLink' to='/home'>Home</Link>
                 •
                 <Link className='footerLink' to='/about'>About</Link>
                 •

@@ -4,7 +4,11 @@ import ProjectInfo from '../components/ProjectInfo'
 import {Link} from 'react-router-dom'
 import "./Home.css"
 
-class About extends Component {
+class Home extends Component {
+
+    componentDidMount() {
+  window.scrollTo(0, 0)
+}
 
     state = {
         timerStart: Date.now(),
@@ -116,4 +120,4 @@ class About extends Component {
     }
 }
 
-export default About
+export default Home
