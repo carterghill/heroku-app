@@ -25,6 +25,18 @@ return (
 
         <br></br>
 
+        <ProjectInfo title='Bobby Big Bot'
+            summary='A custom Discord bot made specifically for my community Smash Bros. Melee server.
+                It contains administrative commands as well as framedata for characters.'
+            img='discordjs.png'
+        >
+            <a href='https://github.com/carterghill/BobbyBigBot' className='btn'>
+                Github
+            </a>
+        </ProjectInfo>
+
+        <br></br>
+
         <ProjectInfo title='Rocket Girl (Unity)'
             summary="A 2D platformer that plays with 3D space. Heavily inspired by Fez, and you can try it online!"
             img='rocketshot.png'
