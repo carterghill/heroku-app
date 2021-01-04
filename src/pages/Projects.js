@@ -3,7 +3,29 @@ import ProjectInfo from '../components/ProjectInfo'
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import './Projects.css'
 
+var OSName = "Unknown";
+if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac";
+if (window.navigator.userAgent.indexOf("X11")            != -1) OSName="UNIX";
+if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
+
 class Projects extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { link: "/Downloads/Love Hertz.zip" };
+
+        if (OSName.localeCompare("Mac") == 0) {
+            this.state = { link: "/Downloads/Love Hertz(Mac).zip" };
+        }
+
+    }
+
 render() {
 return (
     <div >
@@ -12,10 +34,10 @@ return (
 
         <ProjectInfo title='Love Hertz (Love2D)'
             summary="A ''Jump 'N Shoot'' game engine
-				and level editor coded in Lua with the Love2D platform"
+				         and level editor coded in Lua with the Love2D platform"
             img='gameshot.png'
         >
-            <Link className='btn' to="/Downloads/Love Hertz.zip" target="_blank" download>
+            <Link className='btn' to={this.state.link} target="_blank" download>
                 Download
             </Link>
             <br></br>
