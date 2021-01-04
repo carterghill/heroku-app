@@ -2,6 +2,7 @@
 .footer {
 	padding: 1rem;
 	color: rgb(220, 220, 220);
+	box-sizing: border-box;
 }
 
 .footerLink {
@@ -11,4 +12,13 @@
 }
 .footerLink:hover {
 	text-decoration: underline;
+	width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+
+	.footerLink {
+		margin: 0.7rem;
+	}
+
 }
