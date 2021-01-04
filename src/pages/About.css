@@ -1,0 +1,15 @@
+.aboutText {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	margin-top: 2rem;
+	color: rgb(50, 50, 50);
+}
+
+@media screen and (max-width: 960px) {
+
+	.aboutText {
+		width: 90%;
+	}
+
+}

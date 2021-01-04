@@ -26,14 +26,12 @@ function App() {
                         <li>Main purpose of the product •</li>
                         <li>Long term goals •</li>
                         <li>Target Audience •</li>
-                        <li>Budget •</li>
-                        <li>Deadline •</li>
                     </ul>
 
                     <p>
-                        It's okay to be a general as you want or need for now. You
-                        can expect to hear from me within one week, at which point
-                        we can discuss the project in further detail.
+                        It's okay to be a general as you want or need for now. I
+                        will be in touch with you soon where things can be discussed
+                        in further detail.
                     </p>
 
                 </div>
