@@ -11,15 +11,17 @@ class Footer extends Component {
     render() {
         return (
             <div className='footer'>
-				<Link onClick={this.handleClick} className='footerLink' to='/home'>Home</Link>
-                •
-                <Link className='footerLink' to='/about'>About</Link>
-                •
-                <Link className='footerLink' to='/projects'>Projects</Link>
-                •
-                <Link className='footerLink' to='/resources'>Resources</Link>
-                •
-                <Link className='footerLink' to='/contact'>Contact</Link>
+                <ul className='footerList'>
+    				<li><Link onClick={this.handleClick} className='footerLink' to='/home'>Home</Link></li>
+                    <li>•</li>
+                    <li><Link className='footerLink' to='/about'>About</Link></li>
+                    <li>•</li>
+                    <li><Link className='footerLink' to='/projects'>Projects</Link></li>
+                    <li>•</li>
+                    <li><Link className='footerLink' to='/resources'>Resources</Link></li>
+                    <li>•</li>
+                    <li><Link className='footerLink' to='/contact'>Contact</Link></li>
+                </ul>
             </div>
         )
     }
