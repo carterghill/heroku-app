@@ -24,7 +24,12 @@ function App() {
 
         <div className='page'>
             <Route render={({location}) => (
-
+                <TransitionGroup>
+                    <CSSTransition
+                        key={location.key}
+                        timeout={750}
+                        classNames='fade-route'
+                    >
                     <Switch location={location}>
                         <Route path="/" component={Home} exact={true}/>
                         <Route path="/home" component={Home} exact={true}/>
@@ -34,7 +39,10 @@ function App() {
                         <Route path="/contact" component={Contact} />
                         <Route component={PageNotFound} exact={true}/>
                     </Switch>
+                    </CSSTransition>
+                </TransitionGroup>
             )} />
+
 
         </div>
 
