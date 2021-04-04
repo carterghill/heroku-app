@@ -106,7 +106,7 @@
 	}
 
 	#slogan1Start {
-		opacity: 0%;
+		opacity: 0;
 		position: absolute;
 		animation: none;
 		top: 0;
@@ -134,7 +134,7 @@
 	}
 
 	#slogan3Start {
-		opacity: 0%;
+		opacity: 0;
 		position: absolute;
 		animation: none;
 		top: 0;
@@ -148,24 +148,30 @@
 	}
 
 	#slogan1Out {
-		opacity: 0%;
+		opacity: 0;
 		position: relative;
 		top: 0;
-		transition: 1s;
+		animation: fadeout;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
 	}
 
 	#slogan2Out {
-		opacity: 0%;
+		opacity: 0;
 		position: absolute;
 		top: 0;
-		transition: 1s;
+		animation: fadeout;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
 	}
 
 	#slogan3Out {
-		opacity: 0%;
+		opacity: 0;
 		position: absolute;
 		top: 0;
-		transition: 1s;
+		animation: fadeout;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
 	}
 
 	#homeSection {
