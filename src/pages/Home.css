@@ -112,11 +112,13 @@
 		top: 0;
 	}
 	#slogan1 {
-		opacity: 1;
+		opacity: 0;
 		position: relative;
 		top: 0;
-		transition: 1s;
-		transition-delay: 1s;
+		animation: fadein;
+		animation-delay: 1s;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
 	}
 
 	#slogan2Start {
@@ -126,11 +128,13 @@
 		top: 0;
 	}
 	#slogan2 {
-		opacity: 1;
+		opacity: 0;
 		position: absolute;
 		top: 0;
-		transition: 1s;
-		transition-delay: 1s;
+		animation: fadein;
+		animation-delay: 1s;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
 	}
 
 	#slogan3Start {
@@ -140,15 +144,17 @@
 		top: 0;
 	}
 	#slogan3 {
-		opacity: 1;
+		opacity: 0;
 		position: absolute;
 		top: 0;
-		transition: 1s;
-		transition-delay: 1s;
+		animation: fadein;
+		animation-delay: 1s;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
 	}
 
 	#slogan1Out {
-		opacity: 0;
+		opacity: 1;
 		position: relative;
 		top: 0;
 		animation: fadeout;
@@ -157,7 +163,7 @@
 	}
 
 	#slogan2Out {
-		opacity: 0;
+		opacity: 1;
 		position: absolute;
 		top: 0;
 		animation: fadeout;
@@ -166,7 +172,7 @@
 	}
 
 	#slogan3Out {
-		opacity: 0;
+		opacity: 1;
 		position: absolute;
 		top: 0;
 		animation: fadeout;

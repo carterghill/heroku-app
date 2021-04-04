@@ -62,7 +62,7 @@ class Home extends Component {
             <div className='header'>Web, Game, and Custom App Development</div>
 
             <div className='homeSlogans'>
-            <Slogan id={ this.state.slogan1Class } title='Thoughful Design'
+            <Slogan id={ this.state.slogan1Class } title='Thoughtful Design'
                 onClick={this.handleClick}
                 img='brushlogo.png'
                 info=""
