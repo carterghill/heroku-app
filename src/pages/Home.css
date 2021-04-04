@@ -6,7 +6,7 @@
 }
 
 .homeProject {
-	opacity: 0;
+	opacity: 1;
 
 }
 
@@ -18,19 +18,19 @@
 
 @keyframes fadein {
 	from {
-		opacity: 0%;
+		opacity: 0;
 	}
 	to {
-		opacity: 100%;
+		opacity: 1;
 	}
 }
 
 @keyframes fadeout {
 	from {
-		opacity: inherit;
+		opacity: 1;
 	}
 	to {
-		opacity: 0%;
+		opacity: 0;
 	}
 }
 
@@ -39,7 +39,7 @@
 		transform: translateX(-120%);
 	}
 	to {
-		opacity: 100%;
+		opacity: 1;
 		left: 0;
 	}
 }
@@ -49,14 +49,14 @@
 		transform: translateX(120%);
 	}
 	to {
-		opacity: 100%;
+		opacity: 1;
 		left: 0;
 	}
 }
 
 #homeSection2,
 #homeSection {
-	opacity: 0;
+	opacity: 1;
 	animation-delay: 1.5s;
 	animation-name: slidein;
 	animation-duration: 1s;
@@ -72,31 +72,22 @@
 #slogan1Out,
 #slogan1Start,
 #slogan1 {
-	opacity: 0%;
-	animation-delay: 0.25s;
-	animation-name: fadein;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	opacity: 1;
+	transition: 0;
 }
 
 #slogan2Out,
 #slogan2Start,
 #slogan2 {
-	opacity: 0%;
-	animation-delay: 0.5s;
-	animation-name: fadein;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	opacity: 1;
+	transition: 0;
 }
 
 #slogan3Out,
 #slogan3Start,
 #slogan3 {
-	opacity: 0%;
-	animation-delay: 0.9s;
-	animation-name: fadein;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	opacity: 1;
+	transition: 0;
 }
 
 
@@ -113,29 +104,25 @@
 		top: 0;
 	}
 	#slogan1 {
-		opacity: 0%;
+		opacity: 1;
 		position: relative;
 		top: 0;
-		animation-delay: 1s;
-		animation-name: fadein;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		transition: 1s;
+		transition-delay: 1s;
 	}
 
 	#slogan2Start {
-		opacity: 0%;
+		opacity: 0;
 		position: absolute;
 		animation: none;
 		top: 0;
 	}
 	#slogan2 {
-		opacity: 0%;
+		opacity: 1;
 		position: absolute;
 		top: 0;
-		animation-delay: 1s;
-		animation-name: fadein;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		transition: 1s;
+		transition-delay: 1s;
 	}
 
 	#slogan3Start {
@@ -145,43 +132,32 @@
 		top: 0;
 	}
 	#slogan3 {
-		opacity: 0%;
+		opacity: 1;
 		position: absolute;
 		top: 0;
-		animation-delay: 1s;
-		animation-name: fadein;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		transition: 1s;
+		transition-delay: 1s;
 	}
 
 	#slogan1Out {
 		opacity: 0%;
 		position: relative;
 		top: 0;
-		animation-delay: 0s;
-		animation-name: fadeout;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		transition: 1s;
 	}
 
 	#slogan2Out {
 		opacity: 0%;
 		position: absolute;
 		top: 0;
-		animation-delay: 0s;
-		animation-name: fadeout;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		transition: 1s;
 	}
 
 	#slogan3Out {
 		opacity: 0%;
 		position: absolute;
 		top: 0;
-		animation-delay: 0s;
-		animation-name: fadeout;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		transition: 1s;
 	}
 
 	#homeSection {

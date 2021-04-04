@@ -9,14 +9,17 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .btn:hover {
     padding: 8px 20px;
     transition: all 0.3s ease-out;
     background: #fff;
-    color: #6568f4;
     transition: 250ms;
+    text-shadow: none;
 
     text-decoration: none;
 }

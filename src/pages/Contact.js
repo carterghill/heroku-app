@@ -1,7 +1,6 @@
 import React from 'react';
 import ContactForm from '../components/Form'
 import Image from '../components/Image';
-
 import './Contact.css';
 
 function App() {

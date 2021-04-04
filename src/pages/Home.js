@@ -59,7 +59,7 @@ class Home extends Component {
         return (
         <div>
 
-            <div className='header'>Web, Game, and Custom App Developement</div>
+            <div className='header'>Web, Game, and Custom App Development</div>
 
             <div className='homeSlogans'>
             <Slogan id={ this.state.slogan1Class } title='Thoughful Design'
