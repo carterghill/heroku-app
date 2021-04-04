@@ -72,22 +72,30 @@
 #slogan1Out,
 #slogan1Start,
 #slogan1 {
-	opacity: 1;
-	transition: 0;
+	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
 }
 
 #slogan2Out,
 #slogan2Start,
 #slogan2 {
-	opacity: 1;
-	transition: 0;
+	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
 }
 
 #slogan3Out,
 #slogan3Start,
 #slogan3 {
-	opacity: 1;
-	transition: 0;
+	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
 }
 
 
