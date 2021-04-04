@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
-import { Redirect } from 'react-router';
 import { NavItems } from "./NavItems";
 import MenuIcon from "./MenuIcon"
 import './Navbar.css'
@@ -9,18 +8,11 @@ import Image from './Image';
 
 class Navbar extends Component {
 
-    state = {
-        clicked: false,
-        redirect: false
-    }
+    state = { clicked: false }
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked });
         /*window.history.pushState("object or string", "Title", "/new-url");*/
-    }
-
-    linkClick = () => {
-        this.setState({ redirect: true });
     }
 
     render () {
@@ -52,7 +44,7 @@ class Navbar extends Component {
                                     to={item.url}>{item.title}</Link></li>
                                 )
                             })}
-                            <li><div onClick={this.linkClick} id='contactButton' className='btn' to='/contact'>Contact</div></li>
+                            <li><Link id='contactButton' className='btn' to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
                 </div>
