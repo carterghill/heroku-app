@@ -20,8 +20,8 @@ class About extends Component {
                 The purpose of this website is to display my more recent personal projects
                 and what I am capable of as a programmer. I take pride in my problem
                 solving skills and my ability to apply them in my programming. If you
-                are in need of a website for your new business, or have a problem that
-                a computer could solve, please visit the contact page to get in toush with me.
+                are in need of a website for your new business, some kind of custom software,
+                or if you have any questions, please visit the contact page to get in touch with me.
             </div>
 
         </div>
