@@ -12,7 +12,9 @@ render () {
 return (
     <nav className='project'>
 
-    	<Image className='projectImg' img={this.props.img}/>
+        <div className='productImgContainer'>
+            <Image className='projectImg' img={this.props.img}/>
+        </div>
 
 		<div className='projectInfo'>
 			<div className='projectHeader'>{this.props.title}</div>
