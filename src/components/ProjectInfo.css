@@ -40,9 +40,14 @@
 		flex-direction: column
 	}
 
+	.projectHeader {
+		margin-top: 0.5rem;
+	}
+
 	.projectImg {
 		margin: auto;
-		margin-top: 3rem;
+		margin-top: 1rem;
+		width: 90%;
 	}
 
 	.projectInfo {
