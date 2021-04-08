@@ -1,64 +1,38 @@
 import React from 'react';
-import atom from '../Images/atom.png'
-import codelogo from '../Images/codelogo.png'
-import computer from '../Images/computer.jpg'
-import discord from '../Images/discord.png'
-import linux from '../Images/linux.png'
-import logo from '../Images/logo.png'
-import love2d from '../Images/love2d.png'
-import tielogo from '../Images/tielogo.png'
-import unity from '../Images/unity.png'
-import brush from '../Images/brushlogo.png'
-import gameshot from '../Images/gameshot.png'
-import rocketshot from '../Images/rocketshot.png'
-import discordjs from '../Images/discordjs.png'
 
+var keys;
 function importAll(r) {
-
-    var table = {};
-    var item;
-    var values = console.log(r.keys().map(r));
-    var keys = [];
-
-    r.keys().map(item => {
-        console.log(item);
-        keys.push(item)
-    });
-
-    for (let i = 0; i < keys.length; i++) {
-        table[keys[i]] = r.keys().map(r)[i];
-    }
-
-    return table;
+    keys = r.keys();
+    return r.keys().map(r);
 }
 
-//const images = importAll(require.context('../Images/', false, /\.(png|jpe?g|svg)$/));
+const paths = importAll(require.context('../Images/', false, /\.(png|jpe?g|svg)$/));
 
-const images = {
-    'atom.png':     atom,
-    'codelogo.png': codelogo,
-    "computer.jpg": computer,
-    "discord.png": discord,
-    "linux.png": linux,
-    "logo.png": logo,
-    "love2d.png": love2d,
-    "tielogo.png": tielogo,
-    "unity.png": unity,
-    "brushlogo.png": brush,
-    "gameshot.png": gameshot,
-    "rocketshot.png": rocketshot,
-    "discordjs.png": discordjs
+var images = [];
+for (let i = 0; i < keys.length; i++) {
+    keys[i] = keys[i].replace('./', '');
+    images[keys[i]] = paths[i].default;
 }
+
+//const images = importAll(require.context('../images/', false, /\.(png|jpe?g|svg)$/));
+//console.log(images.keys());
 
 export const Image = ({
     className = '',
-    img = ''
+    img = '',
+    id = '',
+    alt='',
+    keys=images.keys(),
+    onClick=()=>{}
 }) => {
 
     return (
-        <img className={className} src={images[img]} />
+        <img onClick={onClick} id={id} alt={alt} className={className} src={images[img]} ></img>
     )
 
 }
+
+Image.images = images;
+Image.keys = keys;
 
 export default Image;

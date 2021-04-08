@@ -47,13 +47,12 @@ return (
 
         <br></br>
 
-        <ProjectInfo title='Bobby Big Bot'
-            summary='A custom Discord bot made specifically for my community Smash Bros. Melee server.
-                It contains administrative commands as well as framedata for characters.'
-            img='discordjs.png'
+        <ProjectInfo title='Pack Mentality'
+            summary="The website for a new business venture that aims to provide quality and affordable pet food."
+            img='packmentality.png'
         >
-            <a href='https://github.com/carterghill/BobbyBigBot' className='btn'>
-                Github
+            <a className='btn' href="http://packmentality.ca">
+                Visit Website
             </a>
         </ProjectInfo>
 
@@ -69,6 +68,18 @@ return (
             <br></br>
             <br></br>
             <a className='github' href='https://github.com/joelghill/RocketGirl/'>Github</a>
+        </ProjectInfo>
+
+        <br></br>
+
+        <ProjectInfo title='Bobby Big Bot'
+            summary='A custom Discord bot made specifically for my community Smash Bros. Melee server.
+                It contains administrative commands as well as framedata for characters.'
+            img='discordjs.png'
+        >
+            <a href='https://github.com/carterghill/BobbyBigBot' className='btn'>
+                Github
+            </a>
         </ProjectInfo>
 
     </div>
