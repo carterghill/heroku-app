@@ -18,6 +18,13 @@ return (
                 <a href='https://atom.io' className='btn'> Visit Website</a>
         </ProjectInfo>
 
+        <ProjectInfo title='Love2d' img='love2dshot.png'
+            summary='A simple but powerful 2D game engine and framework that allows
+                for seemless and flexible code.'>
+                <br></br>
+                <a href='https://love2d.org' className='btn'>Visit Website</a>
+        </ProjectInfo>
+
     </div>
 )
 }

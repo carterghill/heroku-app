@@ -79,10 +79,6 @@ class Home extends Component {
                 />
             </div>
 
-            <div id='homeAbout'>
-
-            </div>
-
             <div className='homeTitle'>
                 Some of my work...
             </div>
@@ -101,7 +97,16 @@ class Home extends Component {
                 <a className='github' href='https://github.com/carterghill/LoveHertz2.0'>Github</a>
             </ProjectInfo>
 
-            <br></br>
+
+            <ProjectInfo title='Pack Mentality'
+                summary="The website for a new business venture that aims to provide quality and affordable pet food."
+                img='packmentality.png'
+            >
+                <a className='btn' href="http://packmentality.ca">
+                    Visit Website
+                </a>
+            </ProjectInfo>
+
             <br></br>
 
             <div className='homeTitle'>
@@ -113,6 +118,13 @@ class Home extends Component {
                 help streamline your coding.'>
                     <br></br>
                     <a href='https://atom.io' className='btn'> Visit Website</a>
+            </ProjectInfo>
+
+            <ProjectInfo title='Love2d' img='love2dshot.png'
+                summary='A simple but powerful 2D game engine and framework that allows
+                    for seemless and flexible code.'>
+                    <br></br>
+                    <a href='https://love2d.org' className='btn'>Visit Website</a>
             </ProjectInfo>
 
         </div>
