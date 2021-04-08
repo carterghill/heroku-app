@@ -140,6 +140,14 @@ body {
 
 @media screen and (max-width: 960px) {
 
+    .logo {
+        opacity: 1;
+    }
+
+    .logo.active {
+        opacity: 0;
+    }
+
     .menu-icon {
         opacity: 1;
         position: absolute;
