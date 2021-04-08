@@ -1,18 +1,18 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import ProjectInfo from '../components/ProjectInfo'
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Projects.css'
 
 var OSName = "Unknown";
-if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Windows";
-if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows";
-if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName="Windows";
-if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName="Windows";
-if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName="Windows";
-if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSName="Windows";
-if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac";
-if (window.navigator.userAgent.indexOf("X11")            != -1) OSName="UNIX";
-if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
+if (window.navigator.userAgent.indexOf("Windows NT 10.0")!== -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 6.2") !== -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 6.1") !== -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 6.0") !== -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 5.1") !== -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Windows NT 5.0") !== -1) OSName="Windows";
+if (window.navigator.userAgent.indexOf("Mac")            !== -1) OSName="Mac";
+if (window.navigator.userAgent.indexOf("X11")            !== -1) OSName="UNIX";
+if (window.navigator.userAgent.indexOf("Linux")          !== -1) OSName="Linux";
 
 class Projects extends Component {
 
@@ -20,7 +20,7 @@ class Projects extends Component {
         super(props);
         this.state = { link: "/Downloads/Love Hertz.zip" };
 
-        if (OSName.localeCompare("Mac") == 0) {
+        if (OSName.localeCompare("Mac") === 0) {
             this.state = { link: "/Downloads/Love Hertz(Mac).zip" };
         }
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { NavItems } from "./NavItems";
-import MenuIcon from "./MenuIcon"
 import './Navbar.css'
 import './MenuIcon.css'
 import Image from './Image';

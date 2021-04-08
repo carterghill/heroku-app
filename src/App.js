@@ -1,5 +1,5 @@
 import Layout from './components/Layout'
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"

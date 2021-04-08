@@ -4,10 +4,6 @@ import './ProjectInfo.css'
 
 class ProjectInfo extends Component {
 
-constructor(props) {
-    super(props);
-}
-
 render () {
 return (
     <nav className='project'>
